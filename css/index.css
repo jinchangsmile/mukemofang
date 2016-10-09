@@ -1,0 +1,1368 @@
+@CHARSET "UTF-8";
+
+/***** body设置 *****/
+body {
+	background-image: url(../images/bk.jpg);
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+/***** body设置结束 *****/
+
+/***** 导航栏设置开始 *****/
+.navbar-brand img {
+	width: 142px;
+	height: 40px;
+}
+
+.daohanglan {
+	margin-top: 3px;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+/* 左边 */
+.daohanglanzuo li {
+	margin-top: 7px;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.daohanglan ul:nth-child(1)>li>a {
+	color: #000000;
+}
+
+.daohanglan ul:nth-child(1)>li>a:hover {
+	color: #ff1717;
+}
+/* 右边 */
+.daohanglanyou li {
+	margin-top: 7px;
+	font-size: 18px;
+	font-weight: lighter;
+	padding-right: 10px;
+}
+
+.daohanglan ul:nth-child(2)>li>a {
+	color: #777;
+}
+
+.daohanglan ul:nth-child(2)>li>a:hover {
+	color: #ff1717;
+}
+/* 搜索框 */
+.sousuo span {
+	color: #777;
+	margin-top: 5px;
+	font-size: 16px;
+	font-weight: lighter;
+	margin-right: 15px;
+}
+
+.sousuo span:hover {
+	color: #ff1717;
+	cursor: pointer;
+}
+
+.sousuo input {
+	width: 240px;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #d9d9d9;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 14px;
+	margin-top: 12px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+/* 微信框部分 */
+.weixin {
+	height: 200px;
+	width: 180px;
+	position: absolute;
+	z-index: 2;
+	margin: 60px 0 0 220px;
+	display: none;
+}
+
+.weixin .ewCode {
+	text-align: center;
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+.weixin .ewCode .ewCode-img img {
+	height: 100%;
+	width: 100%;
+}
+
+.meau>ul:nth-child(2)>li:nth-child(2):hover+div {
+	display: block;
+}
+
+/*微信框中的文本*/
+.weixin .ewCode .ewCode-title {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.weixin .ewCode .ewCode-type {
+	font-size: 12px;
+	color: #CCC;
+}
+
+/*微信隐藏框上的箭头*/
+.weixin .triangle {
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-bottom-color: #fff;
+	margin: 0 auto;
+}
+
+/***** 导航栏结束 *****/
+
+/***** 轮播图设置开始 *****/
+.lunbotu {
+	margin-top: 25px;
+	height: 460px;
+	width: 1200px;
+}
+
+.carousel-control {
+	left: 250px;
+	width: 3%;
+	filter: alpha(opacity = 50);
+	opacity: .7
+}
+
+.carousel-control.left {
+	background-image: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+}
+
+.one>.container {
+	padding: 0;
+}
+
+.leftprev img {
+	transform: rotate(180deg);
+	margin-top: 200px;
+}
+
+.rightnext img {
+	margin-top: 200px;
+}
+
+.carousel-indicators {
+	left: 65%;
+	z-index: 15;
+	width: 60%;
+	text-align: right;
+}
+
+/***** 轮播图结束 *****/
+
+/***** 二级菜单开始 *****/
+
+/* 二级菜单erjicaidan-position */
+.erjicaidan-position {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 460px;
+	width: 245px;
+	z-index: 10;
+	background-color: #5e5e5e;
+	opacity: .3
+}
+
+.caidanliebiao-position {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-left: 25px;
+}
+
+.caidanliebiao-position li {
+	display: block;
+	width: 195px;
+	height: 62px;
+	line-height: 62px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.caidanliebiao-position span {
+	color: #fff;
+	font-size: 12px;
+	padding-left: 180px;
+	text-align: right;
+}
+
+/* 二级菜单erjicaidan */
+.erjicaidan {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 460px;
+	width: 245px;
+	z-index: 100;
+}
+
+.caidanliebiao {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-left: 0;
+}
+
+.caidanliebiao li {
+	font-size: 16px;
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	height: 62px;
+	line-height: 62px;
+}
+
+.caidanliebiao a {
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 32px;
+}
+
+.caidanliebiao li:hover {
+	cursor: pointer;
+	background-color: #3d3d3d;
+	filter: alpha(opacity = 50);
+}
+
+/* 二级菜单右部菜单 */
+/* 第1个 */
+.caidan1 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/1.png");
+	margin-left: 244px;
+	margin-top: -72px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	z-index: 10;
+}
+
+.caidanliebiao>li:nth-child(1):hover>div {
+	display: block;
+}
+
+.caidan1 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan1 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第2个 */
+.caidan2 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/2.png");
+	margin-left: 244px;
+	margin-top: -134px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(2):hover>div {
+	display: block;
+}
+
+.caidan2 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan2 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第3个 */
+.caidan3 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/3.png");
+	margin-left: 244px;
+	margin-top: -196px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(3):hover>div {
+	display: block;
+}
+
+.caidan3 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan3 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第4个 */
+.caidan4 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/4.png");
+	margin-left: 244px;
+	margin-top: -258px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(4):hover>div {
+	display: block;
+}
+
+.caidan4 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan4 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第5个 */
+.caidan5 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/5.png");
+	margin-left: 244px;
+	margin-top: -320px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(5):hover>div {
+	display: block;
+}
+
+.caidan5 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan5 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第6个 */
+.caidan6 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/6.png");
+	margin-left: 244px;
+	margin-top: -382px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(6):hover>div {
+	display: block;
+}
+
+.caidan6 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan6 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/* 第7个 */
+.caidan7 {
+	position: absolute;
+	width: 732px;
+	height: 460px;
+	background-image: url("../images/1F/7.png");
+	margin-left: 244px;
+	margin-top: -444px;
+	padding-left: 40px;
+	padding-top: 10px;
+	z-index: 10;
+	color: #333;
+	display: none;
+	padding-top: 10px;
+}
+
+.caidanliebiao>li:nth-child(7):hover>div {
+	display: block;
+}
+
+.caidan7 b {
+	color: #f01414;
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 28px;
+	font-weight: bold;
+	margin-bottom: 19px;
+}
+
+.caidan7 span:hover {
+	color: #F01414;
+	cursor: pointer;
+}
+/***** 二级菜单结束 *****/
+
+/***** 中间部分开始 *****/
+
+/* bootstrap样式总体设置 */
+.row, .container, .f1-11 .col-md-2 {
+	padding: 0;
+}
+
+.f1-12 .col-md-2 {
+	width: 20%;
+	padding: 0;
+}
+
+/* 实战和免费好课部分开始 */
+.shizhan-01 {
+	margin-right: 1.5%;
+}
+
+.shizhan-02 {
+	margin-right: 1.1%;
+}
+
+.shizhan-03 {
+	margin-right: 1.05%;
+}
+
+.shizhan-04 {
+	margin-right: 1%;
+}
+
+.shizhan-05 {
+	margin-right: 1%;
+}
+
+.f1-12 .col-md-2 {
+	width: 225px;
+	height: 173px;
+	cursor: pointer;
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 5px #909090; /*opera或ie9*/
+}
+
+.f1-12 .col-md-2:hover {
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+.f1-11 .text-left {
+	line-height: 16px;
+	font-size: 16px;
+	color: #07111b;
+	margin-top: 42px;
+	margin-bottom: 24px;
+}
+
+.f1-11 .text-right {
+	color: #07111b;
+	font-size: 14px;
+	font-weight: normal;
+	position: relative;
+	top: 36px;
+}
+
+.f1-11 .text-right span {
+	font-size: 11px;
+	color: #b6b6b6;
+}
+
+.f1-12 img {
+	width: 225px;
+	height: 135px;
+	position: relative;
+}
+
+.shizhan-2 {
+	background-color: #fff;
+	height: 100px;
+	width: 225px;
+	line-height: 45px;
+}
+
+.shizhan-2 span:nth-child(1) {
+	margin-left: 20px;
+	font-size: 12px;
+	color: #f01414;
+}
+
+.shizhan-2 span:nth-child(2) {
+	margin-left: 70px;
+	font-size: 12px;
+	color: #93999f;
+}
+
+.mianfeihaoke {
+	margin-bottom: 45px;
+}
+/* 实战和免费好课部分结束*/
+
+/* 主体部分总样式 */
+.zhuti {
+	background-color: #f3f5f7;
+}
+.shezhibianju{
+	padding-top:50px;
+}
+/* web前端工程师部分开始 */
+
+/* web左边的图片设置 */
+.qianduan .qd-web-text {
+	height: 365px;
+	width: 225px;
+	position: absolute;
+	z-index: 200;
+}
+
+.qd-web-text h2 {
+	font-size: 32px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 28px;
+}
+
+.qd-web-text-1 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	display: block;
+	margin: 34px 0px 0px 20px;
+}
+
+.qd-web-text-2 {
+	color: #cc0033;
+	display: block;
+	font-size: 12px;
+	margin-top: 100px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+.qd-web-text-3, .qd-web-text-4 {
+	color: #cc0033;
+	display: block;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+/* web第一张和第二张设置 */
+.qd-one-text, .qd-two-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: -100px;
+	margin-left: 100px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* web第五张设置 */
+.qianduan .qd-right {
+	height: 363px;
+}
+
+.qd-five-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: 50px;
+	margin-left: -10px;
+	color: #14191e;
+	font-size: 12px;
+	color: #14191e;
+}
+
+.qd-five-text li {
+	padding-bottom: 15px;
+}
+
+.qd-five-text .qd-five-text-xhx {
+	list-style: none;
+	display: block;
+	width: 185px;
+	border-top: 1px solid #93999f;
+	margin-left: -10px;
+}
+/* 前端栅格宽度设置 */
+.qianduan .col-md-2 {
+	width: 18.7%;
+}
+
+.qianduan .qd-web-img {
+	margin-right: 1.7%;
+}
+
+.qianduan .col-md-6 {
+	width: 59.5%;
+}
+
+.qianduan .col-md-4 {
+	width: 30.3%;
+	height: 173px;
+}
+
+.qianduan .col-md-8 {
+	width: 62.5%;
+	margin-left: 2%;
+	margin-right: 1.8%;
+}
+
+/* web位置设置 */
+.qianduan {
+	margin-bottom: 50px;
+}
+
+.qianduan .col-md-2, .qianduan .col-md-6, .qianduan .col-md-4, .qianduan .col-md-8
+	{
+	padding: 0;
+}
+
+.qianduan .qd-mid-top {
+	margin-bottom: 18px;
+}
+/* web图片设置 */
+.qianduan .qd-img-one img {
+	width: 469px;
+	height: 173px;
+}
+
+.qianduan .qd-img-three img, .qianduan .qd-img-four img {
+	width: 225px;
+}
+/* web文本统一设置 */
+.qianduan .qd-text {
+	background-color: #fff;
+	height: 100px;
+	width: 225px;
+	line-height: 45px;
+}
+
+.qianduan .qd-text span:nth-child(1) {
+	margin-left: 20px;
+	font-size: 12px;
+	color: #93999f;
+}
+
+/* 前端阴影设置 */
+.qianduan .col-md-8, .qianduan .col-md-4, .qianduan .col-md-2 {
+	cursor: pointer;
+	-moz-box-shadow: 2px 2px 5px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 5px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 5px #909090; /*opera或ie9*/
+}
+
+.qianduan .col-md-8:hover, .qianduan .col-md-4:hover, .qianduan .col-md-2:hover
+	{
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+/* web前端工程师部分结束 */
+
+/* java工程师设置开始 */
+
+/*java左边的图片设置 */
+.houtai .ht-java-text {
+	height: 365px;
+	width: 225px;
+	position: absolute;
+	z-index: 200;
+}
+
+.ht-java-text h2 {
+	font-size: 32px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 28px;
+}
+
+.ht-java-text-1 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	display: block;
+	margin: 34px 0px 0px 20px;
+}
+
+.ht-java-text-2 {
+	color: #006699;
+	display: block;
+	font-size: 12px;
+	margin-top: 100px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+.ht-java-text-3, .ht-java-text-4 {
+	color: #006699;
+	display: block;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+/* java第一张和第二张设置 */
+.ht-one-text, .ht-two-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: -100px;
+	margin-left: 150px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* java第五张设置 */
+.houtai .ht-right {
+	height: 363px;
+}
+
+.ht-five-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: 50px;
+	margin-left: -10px;
+	color: #14191e;
+	font-size: 12px;
+	color: #14191e;
+}
+
+.ht-five-text li {
+	padding-bottom: 15px;
+}
+
+.ht-five-text .ht-five-text-xhx {
+	list-style: none;
+	display: block;
+	width: 185px;
+	border-top: 1px solid #93999f;
+	margin-left: -10px;
+}
+/* java栅格宽度设置 */
+.houtai .col-md-2 {
+	width: 18.7%;
+}
+
+.houtai .ht-java-img {
+	margin-right: 2.7%;
+}
+
+.houtai .col-md-6 {
+	width: 58.9%;
+}
+
+.houtai .col-md-4 {
+	width: 30.3%;
+	height: 173px;
+	margin-right: 2.3%;
+}
+
+.houtai .col-md-12 {
+	width: 96%;
+}
+/* java位置设置 */
+.houtai {
+	margin-bottom: 50px;
+}
+
+.houtai .col-md-2, .houtai .col-md-6, .houtai .col-md-4, .col-md-12 {
+	padding: 0;
+}
+
+.houtai .ht-mid-top {
+	margin-bottom: 18px;
+}
+
+.houtai .ht-mid-top img {
+	width: 707px;
+}
+/* java图片设置 */
+.houtai .ht-img-one img {
+	width: 469px;
+	height: 173px;
+}
+
+.houtai .ht-img-three img, .houtai .ht-img-four img {
+	width: 225px;
+}
+/* java文本统一设置 */
+.houtai .ht-text {
+	background-color: #fff;
+	height: 100px;
+	width: 225px;
+	line-height: 45px;
+}
+
+.houtai .ht-text span:nth-child(1) {
+	margin-left: 20px;
+	font-size: 12px;
+	color: #93999f;
+}
+
+/* java阴影设置 */
+.houtai .col-md-4, .houtai .col-md-2, .houtai .col-md-12 {
+	cursor: pointer;
+	-moz-box-shadow: 2px 2px 5px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 5px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 5px #909090; /*opera或ie9*/
+}
+
+.houtai .col-md-4:hover, .houtai .col-md-2:hover, .houtai .col-md-12:hover
+	{
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+/* java工程师设置结束 */
+
+/* php工程师设置开始 */
+
+/* php左边的图片设置 */
+.PHP .ht-PHP-text {
+	height: 365px;
+	width: 225px;
+	position: absolute;
+	z-index: 200;
+}
+
+.ht-PHP-text h2 {
+	font-size: 32px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 28px;
+}
+
+.ht-PHP-text-1 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	display: block;
+	margin: 34px 0px 0px 20px;
+}
+
+.ht-PHP-text-2 {
+	color: #006633;
+	display: block;
+	font-size: 12px;
+	margin-top: 100px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+.ht-PHP-text-3, .ht-PHP-text-4 {
+	color: #006633;
+	display: block;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height: 18px;
+	width: 184px;
+	height: 18px;
+}
+
+/* php第一张和第二张设置 */
+.ht-one-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: -100px;
+	margin-left: 100px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* php第五张设置 */
+.PHP .ht-right {
+	height: 363px;
+}
+
+.ht-five-text {
+	position: absolute;
+	z-index: 200;
+	margin-top: 50px;
+	margin-left: -10px;
+	color: #14191e;
+	font-size: 12px;
+	color: #14191e;
+}
+
+.ht-five-text li {
+	padding-bottom: 15px;
+}
+
+.ht-five-text .ht-five-text-xhx {
+	list-style: none;
+	display: block;
+	width: 185px;
+	border-top: 1px solid #93999f;
+	margin-left: -10px;
+}
+/* php栅格宽度设置 */
+.PHP .col-md-2 {
+	width: 18.7%;
+}
+
+.PHP .ht-PHP-img {
+	margin-right: 1.7%;
+}
+
+.PHP .col-md-6 {
+	width: 59.5%;
+}
+
+.PHP .col-md-4 {
+	width: 30.3%;
+}
+
+.PHP .col-md-8 {
+	width: 62.5%;
+	margin-left: 2%;
+	margin-right: 4%;
+}
+
+.PHP .col-md-12 {
+	width: 88.3%;
+}
+/* php位置设置 */
+.PHP {
+	margin-bottom: 50px;
+}
+
+.PHP .col-md-2, .PHP .col-md-6, .PHP .col-md-4, .PHP .col-md-8, .PHP .col-md-12
+	{
+	padding: 0;
+}
+
+.PHP .ht-mid-top {
+	margin-bottom: 18px;
+}
+/* php图片设置 */
+.PHP .ht-img-one img {
+	width: 469px;
+	height: 366px;
+}
+
+.PHP .ht-img-three img, .PHP .ht-img-four img {
+	width: 225px;
+}
+/* php文本统一设置 */
+.PHP .ht-text {
+	background-color: #fff;
+	height: 100px;
+	width: 225px;
+	line-height: 45px;
+}
+
+.PHP .ht-text span:nth-child(1) {
+	margin-left: 20px;
+	font-size: 12px;
+	color: #93999f;
+}
+
+/* php阴影设置 */
+.PHP .col-md-8, .PHP .col-md-12, .PHP .col-md-2 {
+	cursor: pointer;
+	-moz-box-shadow: 2px 2px 5px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 5px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 5px #909090; /*opera或ie9*/
+}
+
+.PHP .col-md-8:hover, .PHP .col-md-12:hover, .PHP .col-md-2:hover {
+	-moz-box-shadow: 2px 2px 10px #909090; /*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090; /*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090; /*opera或ie9*/
+}
+
+/* php工程师设置结束 */
+
+/* liunx部分设置开始 */
+.linux-img-one img {
+	height: 173px;
+}
+
+.sztuijian .linux-text {
+	height: 173px;
+	width: 225px;
+	position: absolute;
+	z-index: 200;
+	margin-top: -173px;
+}
+
+.linux-text h2 {
+	font-size: 32px;
+	line-height: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 28px;
+}
+
+.linux-text-1 {
+	font-size: 16px;
+	line-height: 16px;
+	color: #fff;
+	display: block;
+	margin: 34px 0px 0px 20px;
+}
+
+/* liunx部分设置结束 */
+
+/* 手记猿问部分设置开始 */
+.F9 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.F9 .col-md-2 {
+	width: 18.5%;
+}
+
+.F9 .col-md-5 {
+	width: 40.5%;
+}
+
+.shoujionetext {
+	background-image: url("../images/shoujiyuanwen/shoujileft.png");
+	height: 364px;
+}
+
+.shoujionetext1 {
+	color: #ffffff;
+	font-size: 30px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
+.shoujionetext2 {
+	font-size: 16px;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+.shoujionetext2 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.shoujionetext3 {
+	font-size: 14px;
+	padding-top: 115px;
+	padding-left: 5px;
+}
+
+.shoujionetext3 a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.shoujionetext3 a:hover {
+	color: #c0c0c0;
+}
+
+.shoujionetext31 {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ffffff;
+	margin-bottom: 6px;
+}
+
+.shoujionetext32 {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ffffff;
+	margin-bottom: 6px;
+	text-align: center;
+}
+
+.shoujionetext33 {
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #ffffff;
+}
+
+.shoujitwo {
+	margin-bottom: 17px;
+	font-size: 20px;
+	background-image: url("../images/shoujiyuanwen/one.jpg");
+	height: 174px;
+	text-align: center;
+}
+
+.shoujitwo:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+}
+
+.shoujitwo a {
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 174px;
+}
+
+.shoujikong1 {
+	height: 174px;
+	width: 460px;
+	background-color: #ffffff;
+	padding-top: 20px;
+}
+
+.shoujithree {
+	margin-bottom: 17px;
+	font-size: 20px;
+	background-image: url("../images/shoujiyuanwen/two.jpg");
+	height: 174px;
+	text-align: center;
+}
+
+.shoujithree:hover {
+	cursor: pointer;
+	transform: scale(1.01);
+}
+
+.shoujitwo1 {
+	font-size: 20px;
+	color: #07111b;
+	line-height: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.shoujitwo11 {
+	margin-bottom: 15px;
+}
+
+.shoujitwo11 a {
+	color: #07111b;
+	font-size:14px;
+}
+
+.shoujitwo11 a:hover {
+	text-decoration: none;
+	color: #ff0080;
+}
+
+.shoujitwo12 {
+	margin-bottom: 15px;
+}
+
+.shoujitwo12 a {
+	color: #07111b;
+	font-size:14px;
+}
+
+.shoujitwo12 a:hover {
+	text-decoration: none;
+	color: #ff0080;
+}
+
+.shoujitwo13 {
+	margin-bottom: 15px;
+}
+
+.shoujitwo13 a {
+	color: #07111b;
+	font-size:14px;
+}
+
+.shoujitwo13 a:hover {
+	text-decoration: none;
+	color: #ff0080;
+}
+
+.shoujitwo14 a {
+	color: #07111b;
+	font-size:14px;
+}
+
+.shoujitwo14 a:hover {
+	text-decoration: none;
+	color: #ff0080;
+}
+
+.shoujithree a {
+	color: #ffffff;
+	text-decoration: none;
+	line-height: 174px;
+}
+
+.shoujikong2 {
+	height: 174px;
+	width: 457px;
+	background-color: #ffffff;
+	padding-top: 20px
+}
+
+.shoujithree1 {
+	font-size: 20px;
+	color: #07111b;
+	line-height: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+/* 手记猿问部分设置结束 */
+
+/* footer部分 */
+.tubiao {
+	margin-top: 25px;
+	text-align: center;
+}
+
+.tubiao img:hover {
+	box-shadow: 0 0 8px #ccc;
+}
+
+.lianjie {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+.lianjie a {
+	color: #99a1a6;
+}
+
+.lianjie a:hover {
+	text-decoration: none;
+	color: #f01414;
+}
+
+.footline {
+	margin-top: 20px;
+	color: #E8E8E8;
+}
+
+.beianhao {
+	text-align: center;
+	color: #b4bbbf;
+}
+
+/* 侧边定位 */
+.cebiandingwei {
+	position: fixed;
+	margin-top:-300px;
+	margin-left:1200px;
+	width:50px;
+}
+
+.cebiandingwei ul li {
+	height: 40px;
+	width: 30px;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+}
+
+.cebiandingwei ul li a {
+	display: block;
+}
+
+.dingweiul li a {
+	color: #a8a8a8;
+	font-size: 18px;
+}
+
+.dingweiul li a:hover {
+	color: #f01414;
+	background-color: transparent;
+}
+
+/***** 中间部分结束 *****/
